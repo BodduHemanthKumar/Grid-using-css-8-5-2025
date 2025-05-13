@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        .parent{
+            height: 100vh;
+            width: 100vw;
+            background-color: aqua;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-rows: auto;
+            grid-template-areas:
+                             "nav nav nav nav nav nav"
+                             "aside sample simple main section section"
+                            "aside article article main  box1 box2"
+                            "footer footer footer footer footer footer"
+            ;
+
+        }
+        .child{
+            /* height: 20vh;
+            width: 20vw; */
+            background-color: black;
+           
+        }
+        .child1{
+            align-content: center;
+            color: white;
+            font-size: 30px;
+            grid-area: nav;
+        }
+        .child2{
+            align-content: center;
+            font-size: 30px;
+            color: white;
+            grid-area: aside;
+        }
+        .child3{
+            align-content: center;
+            font-size: 30px;
+            color: white;
+            grid-area: sample;
+        }
+        .child4{
+            align-content: center;
+            font-size: 30px;
+            color: white;
+            grid-area: simple;
+        }
+        .child5{
+            align-content: center;
+            font-size: 30px;
+            color: white;
+            grid-area: main;
+        }
+        .child6{
+            align-content: center;
+            color: white;
+            font-size: 30px;
+            grid-area: section;
+        }
+        .child7{
+            align-content: center;
+            font-size: 30px;
+            color: white;
+            grid-area: article;
+        }
+        .child8{
+            align-content: center;
+            font-size: 30px;
+            color: white;
+            grid-area: box1;
+        }
+        .child9{
+            align-content: center;
+            font-size: 30px;
+            color: white;
+            grid-area: box2;
+        }
+        .child10{
+            align-content: center;
+            font-size: 30px;
+            color: white;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="child child1"><b>NAVIGATION BAR</b></div>
+        <div class="child child2"><b>ASIDE</b></div>
+        <div class="child child3"><b>SAMPLE</b></div>
+        <div class="child child4"><b>SIMPLE</b></div>
+        <div class="child child5"><b>MAIN</b></div>
+        <div class="child child6"><b>SECTION</b></div>
+        <div class="child child7"><b>ARTICLE</b></div>
+        <div class="child child8"><b>BOX1</b></div>
+        <div class="child child9"><b>BOX2</b></div>
+        <div class="child child10"><b>FOOTER</b></div>
+
+    </div>
+</body>
+</html>
